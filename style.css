@@ -1,0 +1,221 @@
+/* filepath: d:\webdev\mult_text_lab\style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #f8f9fa;
+    padding: 0.5em 0;
+    font-size: 0.9em;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.top-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.top-nav-links li {
+    margin-right: 15px;
+}
+
+.top-nav-links a {
+    text-decoration: none;
+    color: #0056b3; /* Strathmore Blue */
+}
+
+.top-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info span {
+    margin-left: 15px;
+}
+
+/* Main Header */
+.main-header {
+    padding: 1em 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px; /* Adjust as needed */
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.main-nav a:hover {
+    color: #0056b3; /* Strathmore Blue */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.strathmore.edu/wp-content/uploads/2023/02/Strathmore-University-Main-Gate.jpg'); /* Replace with a relevant high-quality image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #0056b3; /* Strathmore Blue */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #004080; /* Darker Strathmore Blue */
+}
+
+/* Content Sections */
+.content-section {
+    padding: 3em 0;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: #0056b3; /* Strathmore Blue */
+}
+
+.content-section p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.alt-bg {
+    background-color: #f8f9fa; /* Light grey background for alternating sections */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #bbb;
+    padding: 2em 0;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Ensure sections don't get too squeezed */
+    margin-bottom: 1.5em;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.footer-section.about .logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section .contact span {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.footer-section .socials a {
+    color: #bbb;
+    margin-right: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.footer-section .socials a:hover {
+    color: white;
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1em;
+    border-top: 1px solid #444;
+}
