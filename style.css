@@ -113,7 +113,71 @@ body {
     margin-bottom: 1.5em;
 }
 
+/* ...existing code... */
 
+.hero-image-container {
+    position: relative;
+    display: block;
+    min-height: 400px; /* Ensures enough height for overlay content */
+}
+
+/* Add a semi-transparent black overlay */
+.hero-image-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45); /* Adjust opacity here (0.35 is subtle) */
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-image-container img.z {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay container for heading and button */
+.hero-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-overlay-content h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    margin: 0 0 20px 0;
+    pointer-events: auto;
+}
+
+.hero-overlay-content .hero-btn {
+    position: static;
+    margin: 0 auto;
+    display: inline-block;
+    background: #0056b3;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    pointer-events: auto;
+}
+
+/* Hide the original absolute .hero-btn and h1 if present outside overlay */
+.hero-image-container > .hero-btn,
+.hero-image-container > h1 {
+    display: none;
+}
+
+/* ...existing code... */
 .btn {
     text-decoration: none;
     padding: 10px 20px;
