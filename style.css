@@ -64,7 +64,7 @@ body {
 }
 
 #logo {
-    height: 50px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
 }
 
 .main-nav ul {
@@ -129,6 +129,7 @@ body {
     background: rgba(0,0,0,0.45); /* Adjust opacity here (0.35 is subtle) */
     z-index: 1;
     pointer-events: none;
+    height: 100%;
 }
 
 .hero-image-container img.z {
