@@ -11,9 +11,7 @@ body {
     max-width: 1200px;
     
 } 
-
-
-/* Top Navigation */
+* Top Navigation */
 .top-nav {
     background-color: #f8f9fa;
     padding: 0.5em 0;
@@ -103,6 +101,7 @@ body {
     max-width: 100%;
     height: 85%;
 }
+
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
@@ -177,7 +176,67 @@ body {
 .hero-image-container > h1 {
     display: none;
 }
-
+.hero-slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.hero-slider input[type="radio"] {
+    display: none;
+}
+.hero-slider .slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.hero-slider .slide {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.6s;
+    left: 0;
+    top: 0;
+}
+.hero-slider .slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+#slide1:checked ~ .slides .s1,
+#slide2:checked ~ .slides .s2,
+#slide3:checked ~ .slides .s3 {
+    opacity: 1;
+    z-index: 1;
+}
+.hero-slider .slider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+}
+.hero-slider .slider-nav label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #0056b3;
+    transition: background 0.3s;
+}
+#slide1:checked ~ .slider-nav label[for="slide1"],
+#slide2:checked ~ .slider-nav label[for="slide2"],
+#slide3:checked ~ .slider-nav label[for="slide3"] {
+    background: #0056b3;
+}
 /* ...existing code... */
 .btn {
     text-decoration: none;
@@ -205,6 +264,18 @@ body {
     margin-bottom: 1.5em;
     font-size: 2em;
     color: #0056b3; /* Strathmore Blue */
+}
+
+/* Make video with class 's' large and responsive */
+video.s {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;   /* Adjust max-width as needed */
+    height: auto;
+    border-radius: 12px; /* Optional: rounded corners */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15); /* Optional: subtle shadow */
 }
 
 .content-section p {

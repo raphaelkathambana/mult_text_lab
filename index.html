@@ -46,7 +46,36 @@
 
 <section class="hero">
     <div class="container hero-image-container">
-        <img class="z" src="/images/An_aerial_view_of_Strathmore-University_Keri_campus.jpg" alt="">
+        <div class="hero-slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+
+    <div class="slides">
+        <div class="slide s1">
+            <img class="z" src="/images/An_aerial_view_of_Strathmore-University_Keri_campus.jpg" alt="Aerial view 1">
+        </div>
+        <div class="slide s2">
+            <img class="z" src="/images/A-New-Beginning-Strathmore-University-Class-of-2023-Graduates-with-a-Vision-for-Change-web7.png" alt="Logo">
+        </div>
+        <div class="slide s3">
+            <img class="z" src="/images/courses.webp" alt="Another view">
+        </div>
+        <div class="slide s4">
+            <img class="z" src="/images/A-New-Beginning-Strathmore-University-Class-of-2023-Graduates-with-a-Vision-for-Change-web7.png" alt="Another view">
+        </div>
+    </div>
+
+    <div class="slider-nav">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+    </div>
+</div>
+<div class="hero-overlay-content">
+    <h1>Welcome to Strathmore University</h1>
+    <a href="#" class="btn btn-primary hero-btn">Learn More</a>
+</div>
         <div class="hero-overlay-content">
             <h1>Welcome to Strathmore University</h1>
             <a href="#" class="btn btn-primary hero-btn">Learn More</a>
@@ -112,9 +141,12 @@
 
         <section id="general-description" class="content-section">
             <div class="container">
+              
                 <h2>About Strathmore University</h2>
-                <!-- Content will be added here -->
-                <p>Strathmore University is a leading non-profit private university in Kenya, with a global reputation for excellence in teaching and research. We are committed to ethical practices, service to society, and fostering an environment where students can achieve their full potential.</p>
+               <video class="s" controls width="600">
+                  <source src="/images/videoplayback (1).mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+               </video>
             </div>
         </section>
 
